@@ -4,7 +4,7 @@ class Vivtool < Formula
   desc "Connect to Viiiiva heart rate monitors"
   homepage "https://github.com/p00ya/vivian"
   license "Apache-2.0"
-  head "https://github.com/p00ya/vivian.git", branch: "main"
+  head "https://github.com/p00ya/vivian.git", branch: "develop"
 
   # Xcode 11.4 is the first Xcode version with Swift 5.2.
   depends_on xcode: ["11.4", :build]
