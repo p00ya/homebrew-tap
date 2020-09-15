@@ -18,9 +18,9 @@ class Vivtool < Formula
         "DSTROOT=build",
         # Must use absolute path for SYMROOT for SPM dependencies to be
         # visible.
-        "SYMROOT=#{buildpath}/build",
-        "INSTALL_PATH=/bin"
-    bin.install "build/bin/vivtool"
+        "SYMROOT=#{buildpath}/build"
+    bin.install "build/usr/local/bin/vivtool"
+    man1.install "build/usr/local/share/man/man1/vivtool.1"
   end
 
   test do
