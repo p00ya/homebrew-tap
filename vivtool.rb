@@ -5,6 +5,12 @@ class Vivtool < Formula
   homepage "https://github.com/p00ya/vivian"
   license "Apache-2.0"
   head "https://github.com/p00ya/vivian.git", branch: "develop"
+  stable do
+    url "https://github.com/p00ya/vivian.git",
+      using:    :git,
+      tag:      "v0.1.0",
+      revision: "eb054c9ce92398bd892073bc06009117a236b260"
+  end
 
   # Xcode 11.4 is the first Xcode version with Swift 5.2.
   depends_on xcode: ["11.4", :build]
