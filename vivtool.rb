@@ -8,8 +8,8 @@ class Vivtool < Formula
   stable do
     url "https://github.com/p00ya/vivian.git",
       using:    :git,
-      tag:      "v0.1.1",
-      revision: "8c9126f528f2408cbe593dba998f875812c3cde0"
+      tag:      "v0.2.0",
+      revision: "f9eec31d8d3190286785a399f3d27ce641ae2379"
   end
 
   # Xcode 11.4 is the first Xcode version with Swift 5.2.
