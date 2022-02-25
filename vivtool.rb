@@ -1,19 +1,21 @@
+# typed: false
 # frozen_string_literal: true
 
+# Formula for the "vivtool" utility for connecting to Viiiiva heart rate
+# monitors.
 class Vivtool < Formula
   desc "Connect to Viiiiva heart rate monitors"
   homepage "https://github.com/p00ya/vivian"
   license "Apache-2.0"
-  head "https://github.com/p00ya/vivian.git", branch: "develop"
+  head "https://github.com/p00ya/vivian.git"
   stable do
     url "https://github.com/p00ya/vivian.git",
       using:    :git,
-      tag:      "v0.2.0",
-      revision: "f9eec31d8d3190286785a399f3d27ce641ae2379"
+      tag:      "v0.2.1",
+      revision: "8c81e9256aa2efbc4529ef1ed2c6d7bc905ef306"
   end
 
-  # Xcode 11.4 is the first Xcode version with Swift 5.2.
-  depends_on xcode: ["11.4", :build]
+  depends_on xcode: ["13.2", :build]
 
   def setup_fake_sandbox_exec
     # Workaround for sandbox errors: place a dummy sandbox-exec on PATH.
