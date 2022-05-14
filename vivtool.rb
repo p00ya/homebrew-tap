@@ -19,7 +19,7 @@ class Vivtool < Formula
 
   def install
     chdir "vivtool" do
-      system "swift", "build", "-c", "release", "--disable-sandbox", "--static-swift-stdlib"
+      system "swift", "build", "-c", "release", "--disable-sandbox"
     end
     bin.install "vivtool/.build/release/vivtool"
     man1.install "vivtool/vivtool.1"
